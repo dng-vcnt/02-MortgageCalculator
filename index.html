@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Calculates monthly mortgage payments">
+	<meta name="author" content="Vincent Duong">
+	<title>Mortgage Calculator</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h1>jQuery Mortage Calculator</h1>
+	<div class="container">
+		<div class="fl_left">
+			<div>
+				<label>Loan Balance</label>
+				<input type="number" id="loanBalance">
+			</div>
+
+			<div>
+				<label>Interest Rate (%)</label>
+				<input type="number" id="interestRate">
+			</div>
+
+			<div>
+				<label>Loan Term (years)</label>
+				<input type="number" id="loanTerm">
+			</div>
+
+			<div>
+				<label>Period</label>
+				<select id="period">
+					<option value="12">Monthly</option>
+					<option value="6">Bi-monthly</option>
+				</select>
+			</div>
+			<button id="btnCalculate">Calculate</button>
+		</div>
+
+				
+	</div>
+	<p id="output">Message here</p>
+	
+
+	<script src="bower_components/jQuery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
